@@ -1,0 +1,123 @@
+body{
+    background: hsl(0, 0%, 0%);
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+::selection{
+    background-color: #FFEB00;
+    color: #000;
+}
+
+nav{
+    background: #1C1C1C;
+    color: white;
+    padding: 10px;
+}
+
+ul li {
+    transition: color 0.8s ease-in-out, text-decoration-color 0.5s ease-in-out;
+}
+
+ul li:hover {
+    text-decoration-color: #FFEB00; /* Change the underline color */
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeInDown {
+    animation: fadeInDown 0.6s ease-out both;
+}
+
+.delay-100 {
+    animation-delay: 0.2s;
+}
+
+@keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-fadeInLeft {
+    animation: fadeInLeft 0.6s ease-out both;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 0.6s ease-out both;
+  }
+  
+  .delay-100 {
+    animation-delay: 0.1s;
+  }
+  
+  .btn {
+    transition: box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    box-shadow: 0px 8px 0px 1px #FFEB00, 0 4px 6px -2px #FFEB00;
+}
+
+.getintouch{
+  transition: color 0.8s ease-in-out, text-decoration-color 0.5s ease-in-out;
+    
+}
+
+.getintouch:hover {
+    text-decoration-color: #FFEB00;
+}
+
+
+/* Fade-in effect */
+.fade-up {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered fade-in */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+

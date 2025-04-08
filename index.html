@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- icon -->
+    <link rel="icon" href="assets/favicon (1).ico" type="image/x-icon">
+
+    <!-- // Add the link for the CSS file -->
+    <link rel="stylesheet" href="./styles/style.css" />
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/script/index.js"></script>
+
+    <!-- // Add the CDN link for Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./script/script.js"></script>
+</head>
+
+<body class="scroll-smooth">
+    <!-- navbar section -->
+    <div class="2xl:container mx-auto">
+        <div class="w-[80%] mx-auto hidden md:block md:mt-10">
+            <nav class="w-[80%] mx-auto flex justify-between items-center rounded-lg mt-4 animate-fadeInDown delay-100">
+                <div class="px-4">
+                    <img class="h-[60px] rounded-full" src="./assets/WhatsApp Image 2025-04-08 at 09.18.56.png"
+                        alt="logo">
+                </div>
+                <ul class="flex gap-14 text-[14px] px-4 font-light navclick">
+                    <li><a href="#skills" class="hover:underline hover:text-[#FFEB00]">Skills</a></li>
+                    <li><a href="#projects" class="hover:underline hover:text-[#FFEB00]">Projects</a></li>
+                    <li><a href="#contact" class="hover:underline hover:text-[#FFEB00]">Contact</a></li>
+                    <li><a href="#about" class="hover:underline hover:text-[#FFEB00]">About</a></li>
+                </ul>
+
+            </nav>
+        </div>
+
+        <!-- mobile nav icon -->
+        <!-- mobile nav wrapper -->
+        <div class="w-[90%] mx-auto md:hidden mb-10">
+            <!-- nav bar -->
+            <nav class="w-full flex justify-between items-center rounded-t-lg mt-4 animate-fadeInDown delay-100">
+                <!-- logo -->
+                <div class="px-4">
+                    <img class="h-[40px] rounded-full" src="./assets/WhatsApp Image 2025-04-08 at 09.18.56.png"
+                        alt="logo">
+                </div>
+
+                <!-- menu icon -->
+                <div class="px-4">
+                    <svg id="click" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-menu-icon cursor-pointer text-white">
+                        <line x1="4" x2="20" y1="12" y2="12" />
+                        <line x1="4" x2="20" y1="6" y2="6" />
+                        <line x1="4" x2="20" y1="18" y2="18" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-circle-x-icon lucide-circle-x">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="m15 9-6 6" />
+                        <path d="m9 9 6 6" />
+                    </svg>
+                </div>
+            </nav>
+
+            <!-- nav links (hidden by default on mobile) -->
+            <div id="mobileMenu" class="hidden bg-[#1C1C1C] rounded-b-lg shadow-lg px-4 py-4">
+                <ul class="text-[14px] font-light flex justify-center items-center flex-col gap-y-8">
+                    <li><a href="#skills" class="hover:underline hover:text-[#FFEB00]">Skills</a></li>
+                    <li><a href="#projects" class="hover:underline hover:text-[#FFEB00]">Projects</a></li>
+                    <li><a href="#contact" class="hover:underline hover:text-[#FFEB00]">Contact</a></li>
+                    <li><a href="#about" class="hover:underline hover:text-[#FFEB00]">About</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+        <!-- hero section -->
+        <header>
+            <div class="w-[90%] md:w-[80%] mx-auto grid md:grid-cols-2">
+                <div class="flex flex-col justify-center text-hero animate-fadeInLeft delay-100 space-y-2">
+                    <p class="text-[#FFEB00] animate-typing overflow-hidden whitespace-nowrap border-r-4">hi there, i'm
+                    </p>
+                    <h1 class="font-[800] leading-[72px] text-[62px]">Abraham Bill Clinton</h1>
+                    <p class="text-slate-400">JFSD Developer who specializes in building exceptional digital experience.
+                    </p>
+                    <div>
+
+                        <a class="group relative inline-block overflow-hidden border border-[#FFEB00] px-8 py-3 focus:ring-3 focus:outline-hidden"
+                            href="mailto:abrahambillclinton@gmail.com">
+                            <span
+                                class="absolute inset-y-0 left-0 w-[2px] bg-[#FFEB00] transition-all group-hover:w-full"></span>
+
+                            <span
+                                class="relative text-sm font-medium text-[#FFEB00] transition-colors group-hover:text-black">
+                                HIRE ME
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="mt-20">
+                    <img class="animate-fadeIn" src="assets/openart-0c8dd545-f2df-4d3f-97cb-c84dd513ff32.png"
+                        alt="computer-img">
+                </div>
+            </div>
+        </header>
+
+
+        <!-- about section -->
+        <section id="about">
+            <div class="w-full bg-[#1C1C1C] h-max flex-wrap">
+                <div class="2xl:container mx-auto">
+                    <div class="w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 py-20">
+                        <div class="flex justify-center items-center">
+                            <img class=" h-[500px]" src="assets/image (1).png" alt="profile-img">
+                        </div>
+                        <div>
+                            <p class="text-[#FFEB00]">WHO IS ABRAHAM BILL CLINTON</p>
+                            <h1 class="font-[800] leading-[72px] text-[62px]">A Bit About Me</h1>
+                            <p class="leading-7 text-slate-300">I'm a beginner web developer with hands-on experience in
+                                building real-world projects, currently focused on Java Full Stack Development (JFSD). I
+                                enjoy solving problems and creating clean, user-friendly digital experiences.<br><br>
+
+                                As part of my JFSD journey, I’ve been learning and working with technologies like Core
+                                Java, Spring Boot, HTML, CSS, JavaScript, and database management. I’ve applied these
+                                skills in projects that reflect my ability to connect frontend and backend systems into
+                                seamless applications.<br><br>
+
+                                I’m passionate about learning, building, and constantly improving. Whether it’s writing
+                                maintainable code or exploring new tools, I’m always excited to take on new challenges
+                                and grow as a developer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- skills section -->
+        <section id="skills">
+            <div class="w-full h-max">
+                <div class="w-[90%] md:w-[80%] mx-auto flex flex-col justify-start py-10 fade-up">
+                    <p class="text-[#FFEB00]">MY SKILLS</p>
+                    <h1 class="font-[800] leading-[72px] sm:text-[55px] md:text-[62px]">Technologies I Work With</h1>
+                    <p class="text-slate-400">
+                        I'm passionate about deciphering challenging problems and creating exceptional digital
+                        experience.
+                    </p>
+                </div>
+            </div>
+
+            <div class="w-[90%] md:w-[80%] mx-auto">
+                <ul class="grid grid-cols-2 md:grid-cols-3 gap-4 py-10">
+                    <li class="fade-in">HTML & CSS</li>
+                    <li class="fade-in">Tailwind CSS</li>
+                    <li class="fade-in">Javascript</li>
+                    <li class="fade-in">Git</li>
+                    <li class="fade-in">Java</li>
+                    <li class="fade-in">SpringBoot</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- projects section -->
+        <main>
+            <div class="w-[90%] md:w-[80%] mx-auto mt-40" id="projects">
+                <p class="text-[#FFEB00] fade-up">MY PROJECTS</p>
+                <h1 class="font-[800] leading-[72px] text-[62px] fade-in">Some Things I Built</h1>
+                <p class="text-slate-400 fade-in">I'm passionate about deciphering challenging problems and creating
+                    exceptional
+                    digital experience.
+                </p>
+                <!-- project 1 -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-20">
+                    <div>
+                        <a class="hover:blur-sm" href="https://github.com/abraham2510/Railway-Reservation-System"
+                            target="_blank"><img class="h-[250px] lg:h-[350px]" src="assets/railway.jpg"
+                                alt="railway"></a>
+                    </div>
+                    <div>
+                        <h1 class="text-[40px] text-slate-400">01</h1>
+                        <h1 class="font-[800] leading-[72px] text-[40px]">Railway Reservation System</h1>
+                        <p class="text-slate-300">The Railway Reservation System is a backend RESTful API application
+                            built
+                            using Java and Spring
+                            Boot, designed to manage train schedules, passenger information, and ticket reservations. It
+                            provides endpoints for creating and managing trains, passengers, and bookings, including
+                            features like route-based train search, seat availability checks, and reservation status
+                            updates. This project demonstrates core concepts of Spring MVC, JPA (Hibernate), and REST
+                            architecture, making it a solid foundation for building a scalable transportation booking
+                            system.</p>
+                        <div class="flex gap-2 mt-10">
+                            <a href="https://github.com/abraham2510/Railway-Reservation-System" target="_blank"><button
+                                    class="flex gap-2">
+                                    github <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-github-icon lucide-github">
+                                        <path
+                                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                        <path d="M9 18c-4.51 2-5-2-7-2" />
+                                    </svg> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-arrow-right-icon lucide-arrow-right">
+                                        <path d="M5 12h14" />
+                                        <path d="m12 5 7 7-7 7" />
+                                    </svg>
+                                </button></a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <!-- project 2 -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 space-x-6 gap-4 mt-20">
+                    <div class="lg:order-2">
+                        <a class="hover:blur-sm"
+                            href="https://github.com/abraham2510/Course-and-Banking-Management-System"
+                            target="_blank"><img class="h-[250px] lg:h-[350px]" src="assets/course.jpg"
+                                alt="railway"></a>
+                    </div>
+                    <div class="lg:order-1">
+                        <h1 class="text-[40px] text-slate-400">02</h1>
+                        <h1 class="font-[800] leading-[72px] text-[40px]">Course and Banking Management System</h1>
+                        <p class="text-slate-300">This Spring Boot project is a Course and Banking Management System
+                            that provides a RESTful API to manage course-related data, user accounts, and transaction
+                            histories. It allows users to add, retrieve, update, and delete course details, apply
+                            filters based on price and offers, and search courses by name or stream. Additionally, it
+                            offers core banking features such as account creation, deposits, withdrawals, balance
+                            checks, and detailed transaction histories with time and amount filters. The system is
+                            modular, scalable, and ideal for learning and implementing CRUD operations, REST APIs, and
+                            backend service architecture with Spring Boot.</p>
+                        <div class="flex gap-2 mt-10">
+                            <a class="px-8" href="https://github.com/abraham2510/Course-and-Banking-Management-System"
+                                target="_blank"><button class="flex gap-2">
+                                    github <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-github-icon lucide-github">
+                                        <path
+                                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                        <path d="M9 18c-4.51 2-5-2-7-2" />
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-arrow-right-icon lucide-arrow-right">
+                                        <path d="M5 12h14" />
+                                        <path d="m12 5 7 7-7 7" />
+                                    </svg>
+                                </button></a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <!-- project 3 -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-20">
+                    <div>
+                        <a class="hover:blur-sm" href="https://foodstore-495d8.web.app" target="_blank"><img
+                                class="h-[250px] lg:h-[350px]" src="assets/food-imd.jpg" alt="railway"></a>
+                    </div>
+                    <div>
+                        <h1 class="text-[40px] text-slate-400">03</h1>
+                        <h1 class="font-[800] leading-[72px] text-[40px]">Food Store Web Application</h1>
+                        <p class="text-slate-300">A responsive web application that allows users to browse a diverse
+                            food menu, place online orders, and enjoy features like live order tracking, discounts, and
+                            multiple payment options. Designed to offer a smooth and modern online food shopping
+                            experience.</p>
+                        <div class="flex gap-2 mt-10">
+                            <a href="https://github.com/abraham2510/food-store" target="_blank"><button
+                                    class="flex gap-2">
+                                    github <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-github-icon lucide-github">
+                                        <path
+                                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                        <path d="M9 18c-4.51 2-5-2-7-2" />
+                                    </svg> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-arrow-right-icon lucide-arrow-right">
+                                        <path d="M5 12h14" />
+                                        <path d="m12 5 7 7-7 7" />
+                                    </svg>
+                                </button></a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <!-- contact section -->
+        <section id="contact">
+            <div class="w-[90%] md:w-[80%] mx-auto mt-30 fade-up">
+                <p class="text-[#FFEB00]">THANK YOU FOR TAKING THE TIME TO VISIT MY WEBSITE.</p>
+                <h1 class="font-[800] leading-[72px] text-[62px]">Let's Work Together</h1>
+                <p class="text-slate-400">Feel free to reach out if you're looking to hire, just want to connect or see
+                    if
+                    we can build something
+                    amazing together.</p>
+                <div class="mt-20 text-blur-out hover:text-[#FFEB00]">
+                    <a class="getintouch" href="mailto:abrahambillclinton@gmail.com">GET IN TOUCH →</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- footer section -->
+        <footer>
+            <div class="w-full bg-[#1C1C1C] h-max py-4 mt-22">
+                <div class="2xl:container mx-auto">
+                    <div
+                        class="w-[90%] md:w-[80%] mx-auto flex flex-col lg:flex-row justify-between items-center gap-6">
+
+                        <!-- Text Section -->
+                        <div class="order-2 lg:order-1 text-white">
+                            <p class="text-sm text-center lg:text-left">© 2025 Abraham Bill Clinton</p>
+                        </div>
+
+                        <!-- Icons Section -->
+                        <div class="order-1 lg:order-2 flex gap-4 text-white">
+                            <!-- GitHub Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-github-icon hover:bg-[#FFEB00] hover:rounded-full  hover:text-black">
+                                <path
+                                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                <path d="M9 18c-4.51 2-5-2-7-2" />
+                            </svg>
+
+                            <!-- LinkedIn Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-linkedin-icon hover:bg-[#FFEB00] hover:rounded-full hover:text-black">">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect width="4" height="12" x="2" y="9" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+
+                            <!-- Scroll to Top Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-chevrons-up-icon hover:bg-[#FFEB00] hover:rounded-full hover:text-black">]">
+                                <path d="m17 11-5-5-5 5" />
+                                <path d="m17 18-5-5-5 5" />
+                            </svg>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
